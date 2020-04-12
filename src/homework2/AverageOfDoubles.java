@@ -20,7 +20,7 @@ public class AverageOfDoubles {
             System.out.println("The average is: " + sum / 10);
 
         } catch (InputMismatchException e) {
-            System.out.println("yaxq ara");
+            System.out.println("Error " + e.getMessage());
         }
     }
 }

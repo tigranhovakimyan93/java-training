@@ -2,7 +2,7 @@ package homework3.Person;
 
 import java.util.ArrayList;
 
-public class EmployeesProvider {
+class EmployeesProvider {
 
     private static ArrayList<Person> employees;
 

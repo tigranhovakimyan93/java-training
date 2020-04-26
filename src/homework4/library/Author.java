@@ -1,10 +1,10 @@
 package homework4.library;
 
-public class Author {
+class Author {
 
     private String name;
 
-    public Author() {
+    Author() {
 
     }
 

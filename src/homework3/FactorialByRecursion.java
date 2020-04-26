@@ -20,7 +20,7 @@ public class FactorialByRecursion {
         try {
             int n = scanner.nextInt();
             if (n >= 0) {
-                System.out.println("The factorial of " + n + " is " + factorial(n));
+                System.out.println("The factorial of " + n + " is " + factorial(n) + ".");
             } else {
                 System.out.println("You can't count the factorial of a negative number.");
             }

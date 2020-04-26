@@ -2,14 +2,14 @@ package homework4.library;
 
 import java.util.Date;
 
-public class Book {
+ class Book {
 
     private Author author;
     private String title;
     private String releaseDate;
     private double rating;
 
-    public Book() {
+    Book() {
     }
 
     Book(Author author, String title, String releaseDate, double rating) {

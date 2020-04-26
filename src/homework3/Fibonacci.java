@@ -19,13 +19,13 @@ public class Fibonacci {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter a natural number");
+        System.out.println("Please enter a natural number:");
         try {
             int n = scanner.nextInt();
             if (n >= 0) {
-                System.out.println("The answer is " + fibonacciNumber(n));
+                System.out.println("The answer is " + fibonacciNumber(n) + ".");
             } else {
-                System.out.println("You can't enter negative numbers");
+                System.out.println("You can't enter negative numbers.");
             }
         } catch (InputMismatchException e) {
             System.out.println("You can enter only a natural number.");

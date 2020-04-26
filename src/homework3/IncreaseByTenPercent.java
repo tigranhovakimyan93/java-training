@@ -5,15 +5,16 @@ import java.util.Scanner;
 
 public class IncreaseByTenPercent {
 
-    private static float [] addTenPercents(int index, float[] array) {
-        array[index] = array[index] + array[index]*10/100;
+    private static double[] addTenPercents(int index, double[] array) {
+        array[index] = array[index] + array[index] * 10 / 100;
         return array;
     }
 
     public static void main(String[] args) {
-        float[] array = {1, 2, 3, 4, -1, 22};
+        double[] array = {1, 2, 3, 4, -1, 22};
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter an index");
+        System.out.println("Initial array: " + Arrays.toString(array));
+        System.out.println("Enter an index:");
         while (!scanner.hasNextInt()) {
             System.out.println("You can enter only natural numbers");
             scanner.next();
@@ -22,8 +23,7 @@ public class IncreaseByTenPercent {
         if (index >= array.length || index < 0) {
             System.out.println("Sorry, not existing index");
         } else {
-            System.out.println(Arrays.toString(IncreaseByTenPercent.addTenPercents(index,array)));
-            System.out.println("The answer is: " + array[index]);
+            System.out.println("Increasing the number in index " + index + " by 10%:" + "\nThe answer is: " + IncreaseByTenPercent.addTenPercents(index, array)[index]);
         }
     }
 }

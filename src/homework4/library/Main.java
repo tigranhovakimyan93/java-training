@@ -1,8 +1,5 @@
 package homework4.library;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
@@ -56,7 +53,7 @@ public class Main {
         System.out.println("Please enter a date again");
         Date date2 = Utils.parseDate(scanner.nextLine());
         if (date1.after(date2)) {
-            System.out.println("The first entered date should be after the second date");
+            System.out.println("The first entered date should be after the second date.");
         } else {
             System.out.println("Search results:\n " + LibraryAPI.getBooksBetweenDates(library, date1, date2));
         }

@@ -34,8 +34,11 @@ public class ActionsWithTwoArrays {
         int[] array1 = {1, 2, 3, 4, 5};
         int[] array2 = {6, 7, 8, 9, 10, 11, 12};
 
-        System.out.println(Arrays.toString(ActionsWithTwoArrays.sumArrays(array1, array2)));
-        System.out.println(sumArithmetic(array1, array2));
+
+        System.out.println("Array 1: " + Arrays.toString(array1));
+        System.out.println("Array 2: " + Arrays.toString(array2));
+        System.out.println("Adding these two arrays in one array: " + Arrays.toString(ActionsWithTwoArrays.sumArrays(array1, array2)));
+        System.out.println("The summary of arithmetic averages of these arrays is: " + sumArithmetic(array1, array2));
     }
 }
 

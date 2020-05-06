@@ -5,7 +5,7 @@ import java.io.File;
 public class GetFilesByExtension {
 
     public static void main(String[] args) {
-        File file = new File("/Users/stepan/Desktop/java-training");
+        File file = new File("resources");
         String extension = ".txt";
         String[] names = file.list((dir, name) -> name.endsWith(extension));
         if (names == null) {

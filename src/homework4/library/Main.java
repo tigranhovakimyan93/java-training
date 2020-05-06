@@ -16,10 +16,11 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter an author name");
         String enteredAuthor1 = scanner.nextLine();
-        if (LibraryAPI.getAuthorBooks(library, enteredAuthor1).size() == 0) {
+        ArrayList<String> booksByAuthor = LibraryAPI.getAuthorBooks(library, enteredAuthor1);
+        if (booksByAuthor.size() == 0) {
             System.out.println("No results");
         } else {
-            System.out.println("Search results:" + "\n" + LibraryAPI.getAuthorBooks(library, enteredAuthor1));
+            System.out.println("Search results:" + "\n" + booksByAuthor);
         }
 
         System.out.println("Please enter another author name");
@@ -27,8 +28,7 @@ public class Main {
         if (LibraryAPI.getTopThreeBooks(library, enteredAuthor2).size() == 0) {
             System.out.println("No results");
         } else {
-            int place = 1;
-            for (int i = 0; i < LibraryAPI.getTopThreeBooks(library, enteredAuthor2).size(); i++, place++) {
+            for (int i = 0, place = 1; i < LibraryAPI.getTopThreeBooks(library, enteredAuthor2).size(); i++, place++) {
                 System.out.println("Top " + place + ": " + LibraryAPI.getTopThreeBooks(library, enteredAuthor2).get(i).getTitle());
             }
         }

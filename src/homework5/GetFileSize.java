@@ -5,7 +5,7 @@ import java.io.File;
 public class GetFileSize {
 
     public static void main(String[] args) {
-        File file = new File("/Users/stepan/Desktop/40776959");
+        File file = new File("resources/input.txt");
         if (file.exists()) {
             double sizeB = file.length();
             double sizeKb = Math.round(sizeB / 1024 * 100.0) / 100.0;

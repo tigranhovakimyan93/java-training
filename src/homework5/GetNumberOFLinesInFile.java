@@ -7,7 +7,7 @@ public class GetNumberOFLinesInFile {
 
     public static void main(String[] args) {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("/Users/stepan/Desktop/java-training/input.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("resources/input.txt"));
             String line = reader.readLine();
             int lineCount = 0;
             while (line != null) {

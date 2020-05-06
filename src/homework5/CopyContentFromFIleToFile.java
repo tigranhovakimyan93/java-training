@@ -5,8 +5,8 @@ import java.io.*;
 public class CopyContentFromFIleToFile {
     public static void main(String[] args) {
         try {
-            BufferedReader in = new BufferedReader(new FileReader("/Users/stepan/Desktop/java-training/input.txt"));
-            BufferedWriter out = new BufferedWriter(new FileWriter("/Users/stepan/Desktop/java-training/output.txt"));
+            BufferedReader in = new BufferedReader(new FileReader("resources/input.txt"));
+            BufferedWriter out = new BufferedWriter(new FileWriter("resources/output.txt"));
 
             int c;
             while ((c = in.read()) != -1) {

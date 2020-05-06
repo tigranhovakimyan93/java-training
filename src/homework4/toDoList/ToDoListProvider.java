@@ -7,7 +7,6 @@ final class ToDoListProvider {
     private static ArrayList<Task> toDoList;
 
     private ToDoListProvider() {
-        throw new UnsupportedOperationException();
     }
 
     static ArrayList<Task> getData() {

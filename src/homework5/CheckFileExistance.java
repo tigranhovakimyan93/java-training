@@ -5,7 +5,7 @@ import java.io.File;
 public class CheckFileExistance {
 
     public static void main(String[] args) {
-        File file = new File("/Users/stepan/Desktop/java-training");
+        File file = new File("resources/input.txt");
         if (file.exists()) {
             System.out.println("The " + file + " file exists.");
         } else {

@@ -7,7 +7,6 @@ final class LibraryProvider {
     private static ArrayList<Book> library;
 
     private LibraryProvider() {
-        throw new UnsupportedOperationException();
     }
 
     static ArrayList<Book> getData() {

@@ -5,7 +5,7 @@ import java.io.File;
 public class CanReadAndWrite {
 
     public static void main(String[] args) {
-        File file = new File("/Users/stepan/Desktop/kkkk");
+        File file = new File("resources/input.txt");
         if (file.exists()) {
             if (file.canRead() && file.canWrite()) {
                 System.out.println("The " + file + " file is readable an writable.");

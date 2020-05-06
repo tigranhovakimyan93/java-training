@@ -5,7 +5,7 @@ import java.io.*;
 public class ExploreDir {
 
     public static void main(String[] args) {
-        File file = new File("/Users/stepan/Desktop/java-training");
+        File file = new File("resources");
         String[] fileNames = file.list();
         if (fileNames == null) {
             System.out.println("Not existing directory.");

@@ -8,7 +8,7 @@ class Main {
         Point point1 = new Point(2, 2);
         Point point2 = new Point(2, 5);
         Point point3 = new Point(5, 2);
-        Point point4 = new Point(5, 5);
+        Point point4 = new Point(5, 8);
         Line line1 = new Line(point1, point2);
 
         double distance = PointLineAPI.calculateDistance(point1, point2);

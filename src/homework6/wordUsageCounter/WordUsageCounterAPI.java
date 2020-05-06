@@ -1,4 +1,4 @@
-package homework6;
+package homework6.wordUsageCounter;
 
 import java.io.BufferedReader;
 import java.io.File;

@@ -7,8 +7,8 @@ public class Main {
         String copy = "copy of ";
         String fileName = "input.txt";
         String newFileName = copy.concat(fileName);
-        File file1 = new File("/Users/stepan/Desktop/java-training/", fileName);
-        File file2 = new File("/Users/stepan/Desktop/java-training/", newFileName);
+        File file1 = new File("resources", fileName);
+        File file2 = new File("resources", newFileName);
         ActionsWithFiles.copyFile(file1, file2);
         ActionsWithFiles.deleteFile(file2);
     }

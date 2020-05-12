@@ -23,7 +23,7 @@ public class MaxMinInArray {
     }
 
     public static void main(String[] args) {
-        System.out.println(minElem(array));
-        System.out.println(maxElem(array));
+        System.out.println("Min value off array is " + minElem(array));
+        System.out.println("Max value of array is " + maxElem(array));
     }
 }

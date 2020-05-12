@@ -10,7 +10,7 @@ public class AverageOfDoubles {
         double[] d = new double[10];
         try {
             for (int i = 0; i < 10; i++) {
-                System.out.println("Enter a double");
+                System.out.println("Enter a double:");
                 d[i] = scanner.nextDouble();
             }
             double sum = 0;

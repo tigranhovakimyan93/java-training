@@ -10,12 +10,12 @@ public class RemoveElemByIndex {
         int[] array1 = {0, 1, 2, 3, 4, 5, 6,};
         System.out.println("Enter an index");
         while (!scanner.hasNextInt()) {
-            System.out.println("You can enter only natural numbers");
+            System.out.println("You can enter only natural numbers.");
             scanner.next();
         }
         int i = scanner.nextInt();
         if (i >= array1.length || i < 0) {
-            System.out.println("Sorry, not existing index");
+            System.out.println("Sorry, not existing index.");
         } else {
             int[] array2 = Arrays.copyOfRange(array1, i + 1, array1.length);
             array1 = Arrays.copyOf(array1, i);

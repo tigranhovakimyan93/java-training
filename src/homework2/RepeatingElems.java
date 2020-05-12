@@ -30,6 +30,6 @@ public class RepeatingElems {
             }
             firstArray = Arrays.copyOf(firstArray, newIndex);
         }
-        System.out.println(Arrays.toString(firstArray));
+        System.out.println("Repeated numbers in array: " + Arrays.toString(firstArray));
     }
 }

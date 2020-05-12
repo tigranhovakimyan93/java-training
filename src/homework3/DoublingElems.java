@@ -13,6 +13,7 @@ public class DoublingElems {
 
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, -1, 22};
-        System.out.println(Arrays.toString(DoublingElems.doubling(array)));
+        System.out.println("Initial array: " + Arrays.toString(array));
+        System.out.println("New array with doubled elements: " + Arrays.toString(DoublingElems.doubling(array)));
     }
 }

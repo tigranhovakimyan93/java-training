@@ -13,6 +13,7 @@ public class RemoveX {
 
     public static void main(String[] args) {
         String[] array = {"xxax", "xbxbx", "xxcx"};
-        System.out.println(Arrays.toString(RemoveX.noX(array)));
+        System.out.println("Initial array: " + Arrays.toString(array));
+        System.out.println("Deleting 'x' from elements;" + "\nNew Array: " + Arrays.toString(RemoveX.noX(array)));
     }
 }

@@ -50,6 +50,8 @@ public class IntSorterInArray {
         int[] arrayForEven = s.replaceAll("\\D", "").chars().map(Character::getNumericValue).toArray();
         int[] arrayForOdd = Arrays.copyOf(arrayForEven, arrayForEven.length);
         int[] arrayForPrime = Arrays.copyOf(arrayForEven, arrayForEven.length);
+
+        System.out.println("Main array: " + Arrays.toString(arrayForEven));
         System.out.println("Even numbers: " + Arrays.toString(even(arrayForEven)));
         System.out.println("Odd numbers: " + Arrays.toString(odd(arrayForOdd)));
         System.out.println("Prime numbers: " + Arrays.toString(prime(arrayForPrime)));

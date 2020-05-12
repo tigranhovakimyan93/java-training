@@ -1,0 +1,8 @@
+Line 1 contains 1 hello
+Line 2 contains 1 hello
+Line 3 contains 0 hello
+Line 4 contains 1 hello
+Line 5 contains 0 hello
+Line 6 contains 2 hello
+Line 7 contains 0 hello
+Line 8 contains 4 hello

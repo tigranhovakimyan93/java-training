@@ -1,6 +1,5 @@
 package homework3.Person;
 
-import java.text.ParseException;
 import java.util.*;
 
 public class Main extends Person {

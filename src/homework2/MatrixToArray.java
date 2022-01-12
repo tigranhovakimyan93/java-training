@@ -7,7 +7,7 @@ public class MatrixToArray {
     public static void main(String[] args) {
         int[][] matrixA = {{1, 2, 3, 4},
                 {3, 2, 1}};
-        int[] array = new int[7];
+        int[] array = new int[matrixA[0].length + matrixA[1].length];
         int k = 0;
         for (int i = 0; i < matrixA.length; i++) {
             for (int j = 0; j < matrixA[i].length; j++) {
